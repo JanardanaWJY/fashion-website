@@ -1,0 +1,91 @@
+<!-- Products -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="Assets/shopping-bags.png" type="image/x-icon">
+    <link rel="stylesheet" href="aboutUs_style.css">
+    <title>M&T</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <div class="header-logo-img"><img src="Assets/shopping-bags.png" alt=""></div>
+                <div class="header-logo-text"><h1>M<span>&</span>T</h1></div>
+            </div>
+            <div class="header-navbar">
+                <a href="index.html#home">HOME</a>
+                <a href="#contact">CONTACT US</a>
+                <a href="aboutUs.html">ABOUT US</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header(Responsivity) -->
+    <section class="header2">
+        <div class="topnav">
+            <a href="#" class="active"><div class="txt">
+                <div class="logo">
+                    <div class="img">
+                        <img src="Assets/shopping-bags.png" alt="">
+                    </div>
+                    <h1>M&T</h1>
+                </div>
+            </div></a>
+            <div id="myLinks">
+                <a href="index.html#home">HOME</a>
+                <a href="#contact">CONTACT US</a>
+                <a href="aboutUs.html">ABOUT US</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </section>
+
+    <!-- Content -->
+    <section class="content1">
+        <div class="content1-container">
+            <div class="title">
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="content1-img">
+                <img src="Assets/H&M Building.jpeg" alt="">
+            </div>
+            <p>We were established since  1990 in Indonesia. We first had one store that is located in Jakarta. Ever since that, men always come to us looking for their daily clothes. However, clothes  were not as their daily needs anymore. They wanted to look cool overtime. Therefore, we decided to not consider clothes by only their comfort, but also by their fashion. We decided to make fashion that can be followed globaly. Now, we sell all of men needs for their fashion. There almost are all of current trend of men's fashionwear here. You will be able to reach them out almost all over the world.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="contact-us">
+                <h1>Contact Us:</h1>
+                <a href="https://www.instagram.com/" target="_blank" class="instagram"><img src="Assets/instagram.png"><p>@Instagram</p></a>
+                <a href="https://www.facebook.com/" target="_blank" class="facebook"><img src="Assets/facebook.png"><p>@Facebook</p></a>
+            </div>
+            <div class="copyright">
+                <p>&copy;2022 <span>M<span class="letter">&</span>T.</span> All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

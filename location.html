@@ -1,0 +1,139 @@
+<!-- Products -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="Assets/shopping-bags.png" type="image/x-icon">
+    <link rel="stylesheet" href="location_style.css">
+    <title>M&T</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <div class="header-logo-img"><img src="Assets/shopping-bags.png" alt=""></div>
+                <div class="header-logo-text"><h1>M<span>&</span>T</h1></div>
+            </div>
+            <div class="header-navbar">
+                <a href="index.html#home">HOME</a>
+                <a href="#contact">CONTACT US</a>
+                <a href="aboutUs.html">ABOUT US</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header(Responsivity) -->
+    <section class="header2">
+        <div class="topnav">
+            <a href="#" class="active"><div class="txt">
+                <div class="logo">
+                    <div class="img">
+                        <img src="Assets/shopping-bags.png" alt="">
+                    </div>
+                    <h1>M&T</h1>
+                </div>
+            </div></a>
+            <div id="myLinks">
+                <a href="index.html#home">HOME</a>
+                <a href="#contact">CONTACT US</a>
+                <a href="aboutUs.html">ABOUT US</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </section>
+
+    <!-- Content -->
+    <section class="content1">
+        <div class="content1-container">
+            <div class="title">
+                <h1>OUR PLACES</h1>
+            </div>
+            <div class="card">
+                <div class="leftside">
+                    <div class="name">M&T Jakarta</div>
+                    <div class="card-img"><img src="Assets/H&M Building.jpeg" alt=""></div>
+                </div>
+                <div class="rightside">
+                    <div class="card-text">Country : Indonesia</div>
+                    <div class="card-text">City : Jakarta</div>
+                    <div class="card-text">Street :  M.H. Thamrin street</div>
+                    <div class="card-text end">See Location on Google Maps :</div>
+                    <div class="button-location"><a href="https://www.google.com/maps" target="_blank">CLICK</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="leftside">
+                    <div class="name">M&T Paris</div>
+                    <div class="card-img"><img src="Assets/H&M Building.jpeg" alt=""></div>
+                </div>
+                <div class="rightside">
+                    <div class="card-text">Country : France</div>
+                    <div class="card-text">City : Paris</div>
+                    <div class="card-text">Street :  Rue Linolis street </div>
+                    <div class="card-text end">See Location on Google Maps :</div>
+                    <div class="button-location"><a href="https://www.google.com/maps" target="_blank">CLICK</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="leftside">
+                    <div class="name">M&T New York</div>
+                    <div class="card-img"><img src="Assets/H&M Building.jpeg" alt=""></div>
+                </div>
+                <div class="rightside">
+                    <div class="card-text">Country : USA</div>
+                    <div class="card-text">City : New York</div>
+                    <div class="card-text">Street :  86 Church street</div>
+                    <div class="card-text end">See Location on Google Maps :</div>
+                    <div class="button-location"><a href="https://www.google.com/maps" target="_blank">CLICK</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="leftside">
+                    <div class="name">M&T Abu Dhabi</div>
+                    <div class="card-img"><img src="Assets/H&M Building.jpeg" alt=""></div>
+                </div>
+                <div class="rightside">
+                    <div class="card-text">Country : UAE</div>
+                    <div class="card-text">City : Abu Dhabi</div>
+                    <div class="card-text">Street :  Hazza Bin Zayed The First street</div>
+                    <div class="card-text end">See Location on Google Maps :</div>
+                    <div class="button-location"><a href="https://www.google.com/maps" target="_blank">CLICK</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="contact-us">
+                <h1>Contact Us:</h1>
+                <a href="https://www.instagram.com/" target="_blank" class="instagram"><img src="Assets/instagram.png"><p>@Instagram</p></a>
+                <a href="https://www.facebook.com/" target="_blank" class="facebook"><img src="Assets/facebook.png"><p>@Facebook</p></a>
+            </div>
+            <div class="copyright">
+                <p>&copy;2022 <span>M<span class="letter">&</span>T.</span> All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

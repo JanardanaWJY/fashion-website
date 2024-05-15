@@ -1,0 +1,133 @@
+<!-- Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="Assets/shopping-bags.png" type="image/x-icon">
+    <link rel="stylesheet" href="index_style.css">
+    <title>M&T</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <div class="header-logo-img"><img src="Assets/shopping-bags.png" alt=""></div>
+                <div class="header-logo-text"><h1>M<span>&</span>T</h1></div>
+            </div>
+            <div class="header-navbar">
+                <a href="#home">HOME</a>
+                <a href="#contact">CONTACT US</a>
+                <a href="aboutUs.html">ABOUT US</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header(Responsivity) -->
+    <section class="header2">
+        <div class="topnav">
+            <a href="#" class="active"><div class="txt">
+                <div class="logo">
+                    <div class="img">
+                        <img src="Assets/shopping-bags.png" alt="">
+                    </div>
+                    <h1>M&T</h1>
+                </div>
+            </div></a>
+            <div id="myLinks">
+                <a href="#home">HOME</a>
+                <a href="#contact">CONTACT US</a>
+                <a href="aboutUs.html">ABOUT US</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </section>
+
+    <!-- Content -->
+    <section class="content1" id="home">
+        <div class="content1-container">
+            <div class="img-content">
+                <img src="Assets/men_fashion.png" alt="">
+            </div>
+            <div class="txt-content">
+                <h1>No M<span>&</span>T no fashion</h1>
+                <p>M&T will make you becoming good looking on your own. Find your needs now only in M&T. Check this out for visiting our place.</p>
+                <a href="location.html" class="btn-location">CHECK THIS OUT</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Men's Fashion Trends Slide Show -->
+    <div class="slide-text">MEN'S FASHION TRENDS</div>
+    <div class="slideshow-container">
+        <div class="Slides fade">
+        <div class="number-text">1 / 3</div>
+        <img src="Assets/Men-Coat-Gallery.jpg">
+        <div class="text">COAT</div>
+        </div>
+        <div class="Slides fade">
+        <div class="number-text">2 / 3</div>
+        <img src="Assets/Men-Jean-Gallery.jpg">
+        <div class="text">JEANS</div>
+        </div>
+        <div class="Slides fade">
+        <div class="number-text">3 / 3</div>
+        <img src="Assets/Men-Suit-Gallery.jpg">
+        <div class="text">SUIT</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="pos" onclick="currentSlide(1)"></span>
+        <span class="pos" onclick="currentSlide(2)"></span>
+        <span class="pos" onclick="currentSlide(3)"></span>
+    </div>
+
+    <section class="content2">
+        <div class="content2-container">
+            <div class="txt-content">
+                <a href="products.html" class="btn-location">SEE ALL PRODUCTS</a>
+            </div>
+            <h1>Subscribe for more :</h1>
+            <div class="txt-content subs">
+                <a href="subscribe.html" class="btn-location">SUBSCRIBE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="contact-us">
+                <h1>Contact Us:</h1>
+                <a href="https://www.instagram.com/" target="_blank" class="instagram"><img src="Assets/instagram.png"><p>@Instagram</p></a>
+                <a href="https://www.facebook.com/" target="_blank" class="facebook"><img src="Assets/facebook.png"><p>@Facebook</p></a>
+            </div>
+            <div class="copyright">
+                <p>&copy;2022 <span>M<span class="letter">&</span>T.</span> All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index_jav.js"></script>
+</body>
+</html>
